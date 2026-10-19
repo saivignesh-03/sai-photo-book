@@ -1,0 +1,19 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/saiphotobook.env/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "saiphotobook.env": true,
+    ".photobook-cache": true,
+    "catalog.json": true,
+    "photos.js": true,
+    "**/.DS_Store": true
+  },
+  "search.exclude": {
+    "**/saiphotobook.env": true,
+    "**/.photobook-cache": true,
+    "catalog.json": true,
+    "photos.js": true
+  }
+}

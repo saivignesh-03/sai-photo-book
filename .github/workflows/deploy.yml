@@ -1,0 +1,83 @@
+name: Publish Photo Book
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: Install photo tools
+        run: python -m pip install -r requirements.txt
+
+      - name: Check galleries
+        run: python -B -m unittest discover -s tests -v
+
+      - name: Build website and HEIC previews
+        run: |
+          python -B build_gallery.py
+          python - <<'PY'
+          import json
+          import shutil
+          from pathlib import Path
+
+          site = Path("_site")
+          site.mkdir()
+          shutil.copy2("index.html", site / "index.html")
+          shutil.copytree("assets", site / "assets")
+          shutil.copytree("photos", site / "photos")
+
+          previews = Path(".photobook-cache/previews")
+          if previews.exists():
+              shutil.copytree(previews, site / "assets/previews")
+
+          catalog = json.loads(Path("catalog.json").read_text(encoding="utf-8"))
+          for group in ("photos", "recentPhotos"):
+              for photo in catalog[group]:
+                  photo["image"] = photo["image"].replace(
+                      ".photobook-cache/previews/", "assets/previews/"
+                  )
+
+          text = json.dumps(catalog, ensure_ascii=False)
+          (site / "catalog.json").write_text(text, encoding="utf-8")
+          (site / "photos.js").write_text(
+              "window.PHOTO_BOOK_CATALOG = "
+              + text.replace("<", "\\u003c") + ";\n",
+              encoding="utf-8"
+          )
+          PY
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4

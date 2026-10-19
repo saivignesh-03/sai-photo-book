@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Photo Book",
+      "type": "process",
+      "command": "${workspaceFolder}/saiphotobook.env/bin/python",
+      "args": [
+        "-B",
+        "serve.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Refresh Galleries",
+      "type": "process",
+      "command": "${workspaceFolder}/saiphotobook.env/bin/python",
+      "args": [
+        "-B",
+        "build_gallery.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

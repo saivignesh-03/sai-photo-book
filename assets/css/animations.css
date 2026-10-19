@@ -1,0 +1,41 @@
+/* MOTION BLUEPRINT — all decorative motion lives here and in animations.js. */
+:root{--motion-fast:220ms;--motion-normal:650ms;--motion-slow:1000ms;--motion-ease:cubic-bezier(.2,.75,.25,1)}
+/* Readable by default. JavaScript adds motion-enabled only when supported. */
+.motion-enabled .hero-intro h1{animation:title-enter var(--motion-slow) var(--motion-ease) both}
+.motion-enabled .hero-intro .eyebrow{animation:fade-up var(--motion-normal) var(--motion-ease) both}
+.motion-enabled .hero-aside{animation:fade-up var(--motion-slow) 140ms var(--motion-ease) both}
+.motion-enabled .hero-photo{animation:frame-enter 1100ms 80ms var(--motion-ease) both}
+.motion-enabled .reveal,.motion-enabled .card-reveal{opacity:0;transform:translate3d(0,25px,0);transition:opacity var(--motion-normal) var(--motion-ease),transform var(--motion-normal) var(--motion-ease)}
+.motion-enabled .reveal.visible,.motion-enabled .card-reveal.visible{opacity:1;transform:translate3d(0,0,0)}
+.motion-enabled .card-reveal{transition-delay:var(--reveal-delay,0ms);animation:none}
+.motion-enabled .hero-photo img{transform:translate3d(0,var(--hero-y,0px),0) scale(1.08);transition:transform 900ms var(--motion-ease)}
+.motion-enabled .hero-photo:hover img{transform:translate3d(0,var(--hero-y,0px),0) scale(1.115)}
+.motion-enabled .sun-disc{animation:sun-drift 9s ease-in-out 2 alternate}
+.motion-enabled .tiny-star{animation:star-turn 12s ease-in-out 2 alternate}
+.motion-enabled .photo-button:not(.image-ready):not(.image-error)::after{animation:image-sheen 1700ms ease-in-out 2}
+.motion-enabled .photo-button img{transition:transform 800ms var(--motion-ease),filter 500ms ease}
+.motion-enabled .photo-button:hover img{transform:scale(1.055);filter:saturate(1.08)}
+.motion-enabled .round-arrow{transition:transform 350ms var(--motion-ease),background 220ms}
+.motion-enabled .hero-photo:hover .round-arrow{transform:rotate(8deg) translateY(-3px)}
+.motion-enabled .see-more span{transition:transform 300ms var(--motion-ease)}
+.motion-enabled .see-more:hover span{transform:translate(3px,-3px)}
+.motion-enabled .collection-tab{transition:background var(--motion-fast),color var(--motion-fast),border-color var(--motion-fast),box-shadow var(--motion-fast)}
+.motion-enabled dialog[open]{animation:dialog-enter 350ms var(--motion-ease)}
+.motion-enabled dialog[open]::backdrop{animation:backdrop-enter 300ms ease}
+.motion-enabled dialog[open] .dialog-story{animation:fade-up 500ms 80ms var(--motion-ease) both}
+.motion-enabled .about-symbol{transition:transform 1400ms var(--motion-ease)}
+.motion-enabled .about:hover .about-symbol{transform:rotate(30deg)}
+/* Visitors can pause effects with the header button. No motion is essential. */
+.motion-paused *, .motion-paused *::before,.motion-paused *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+.motion-paused .reveal,.motion-paused .card-reveal{opacity:1!important;transform:none!important}
+.motion-paused .hero-photo img{transform:none!important}
+@keyframes title-enter{from{opacity:0;transform:translateY(26px);filter:blur(3px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+@keyframes fade-up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes frame-enter{from{opacity:0;clip-path:inset(4% 1% 4% 1%)}to{opacity:1;clip-path:inset(0)}}
+@keyframes sun-drift{from{transform:translate(0,0)}to{transform:translate(12px,-12px)}}
+@keyframes star-turn{from{transform:rotate(-12deg)}to{transform:rotate(28deg)}}
+@keyframes image-sheen{from{background-position:150% 0}to{background-position:-100% 0}}
+@keyframes dialog-enter{from{opacity:0;transform:translateY(15px) scale(.985)}to{opacity:1;transform:none}}
+@keyframes backdrop-enter{from{opacity:0}to{opacity:1}}
+@media(max-width:700px){.motion-enabled .hero-photo img,.motion-enabled .hero-photo:hover img{transform:none}.motion-enabled .reveal,.motion-enabled .card-reveal{transform:translateY(16px)}.motion-enabled .visible{transform:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important}.motion-enabled .reveal,.motion-enabled .card-reveal{opacity:1!important;transform:none!important}.motion-enabled .hero-photo img{transform:none!important}}
