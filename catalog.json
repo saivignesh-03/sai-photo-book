@@ -1,6 +1,126 @@
 {
   "photos": [
     {
+      "id": "landscapes/B07AD07B-ABD2-47AF-A6F6-577039042E51_1_102_a.jpeg",
+      "category": "landscapes",
+      "source": "landscapes",
+      "title": "A landscape moment",
+      "image": "photos/landscapes/B07AD07B-ABD2-47AF-A6F6-577039042E51_1_102_a.jpeg?v=1792526163095239381",
+      "alt": "Sai’s photograph from Landscapes",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/16DDFF4F-6443-4FC8-ADF4-1F407F8E7B93_1_102_a.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/16DDFF4F-6443-4FC8-ADF4-1F407F8E7B93_1_102_a.jpeg?v=1792526107637250492",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "life/0D7A8D14-571A-4658-9CAC-327F95DF5E27_1_102_o.jpeg",
+      "category": "life",
+      "source": "life",
+      "title": "A moment in life",
+      "image": "photos/life/0D7A8D14-571A-4658-9CAC-327F95DF5E27_1_102_o.jpeg?v=1792526002475072048",
+      "alt": "Sai’s photograph from Life",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/72B62CFF-77B5-40B2-9EFC-0C176CBF05DA_1_102_a.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/72B62CFF-77B5-40B2-9EFC-0C176CBF05DA_1_102_a.jpeg?v=1792525806446450350",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/2F7A65EA-298D-4E88-9EE8-6BD7171B697E_1_102_o.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/2F7A65EA-298D-4E88-9EE8-6BD7171B697E_1_102_o.jpeg?v=1792525706168584737",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/63D09179-77A2-4A59-BB4A-10C4EFBE4446_1_102_o.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/63D09179-77A2-4A59-BB4A-10C4EFBE4446_1_102_o.jpeg?v=1792525646306051155",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/242DAD4F-D478-4D4A-80A5-97B3A5FA97B4_1_102_a.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/242DAD4F-D478-4D4A-80A5-97B3A5FA97B4_1_102_a.jpeg?v=1792525646273113092",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "life/510BF5AB-120B-44F0-8A51-1052A981FB55_1_102_a.jpeg",
+      "category": "life",
+      "source": "life",
+      "title": "A moment in life",
+      "image": "photos/life/510BF5AB-120B-44F0-8A51-1052A981FB55_1_102_a.jpeg?v=1792525627000672438",
+      "alt": "Sai’s photograph from Life",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "landscapes/1637E630-CEF6-4531-BD2B-35581C9C5210_1_102_a.jpeg",
+      "category": "landscapes",
+      "source": "landscapes",
+      "title": "A landscape moment",
+      "image": "photos/landscapes/1637E630-CEF6-4531-BD2B-35581C9C5210_1_102_a.jpeg?v=1792525547690924430",
+      "alt": "Sai’s photograph from Landscapes",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "life/F3915050-0043-4F60-8405-572A95541831_1_105_c.jpeg",
+      "category": "life",
+      "source": "life",
+      "title": "A moment in life",
+      "image": "photos/life/F3915050-0043-4F60-8405-572A95541831_1_105_c.jpeg?v=1792444977359493518",
+      "alt": "Sai’s photograph from Life",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
       "id": "life/1428E4CF-9AB4-458A-A3A7-C9B5C450F79E_1_102_a.jpeg",
       "category": "life",
       "source": "life",
@@ -361,6 +481,18 @@
       "sample": false
     },
     {
+      "id": "nature/0A4172F6-6DE2-4B73-B02C-A84FEF704F78_1_201_a.heic",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": ".photobook-cache/previews/86d804b60e4b5db7076391cafce6.jpg?v=1792526385273297166",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
       "id": "landscapes/52355660-56B1-40D0-B1C9-B33C2D812759_1_105_c.jpeg",
       "category": "landscapes",
       "source": "landscapes",
@@ -379,6 +511,18 @@
       "title": "A landscape moment",
       "image": "photos/landscapes/6E5625F0-38F5-4BD5-9641-F4AAFA571D7E_1_105_c.jpeg?v=1791693837955324725",
       "alt": "Sai’s photograph from Landscapes",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/647C1165-D448-4B6D-BA23-B0FEB33BFACD_1_105_c.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/647C1165-D448-4B6D-BA23-B0FEB33BFACD_1_105_c.jpeg?v=1791693837824224407",
+      "alt": "Sai’s photograph from Nature",
       "story": "",
       "camera": "",
       "recent": true,
@@ -445,6 +589,30 @@
       "sample": false
     },
     {
+      "id": "nature/49E54A29-6E25-4F0F-8701-74332046D754_1_201_a.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/49E54A29-6E25-4F0F-8701-74332046D754_1_201_a.jpeg?v=1791435913258341615",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/3B64C372-671E-483E-9A99-17D996D14EE8_1_201_a.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/3B64C372-671E-483E-9A99-17D996D14EE8_1_201_a.jpeg?v=1791435910886391091",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
       "id": "landscapes/FAC338D5-72D2-4B67-80E0-71FF79351E33_1_201_a.jpeg",
       "category": "landscapes",
       "source": "landscapes",
@@ -493,6 +661,18 @@
       "sample": false
     },
     {
+      "id": "nature/8F8E6B4F-BFD4-4169-AAEB-C114FE89BE77_1_201_a.heic",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": ".photobook-cache/previews/b996e963b8c146596429a12c0d37.jpg?v=1792526385528300252",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
       "id": "nature/5E3E0E71-0DCB-4596-B452-388DE97F5861_1_105_c.jpeg",
       "category": "nature",
       "source": "nature",
@@ -523,6 +703,30 @@
       "title": "A moment in life",
       "image": "photos/life/426AB23E-345F-4E40-BA12-C8114EF5F6B3_1_105_c.jpeg?v=1790623952637536848",
       "alt": "Sai’s photograph from Life",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/3CC3A244-B0E9-4A2D-8C55-89A6AD6739C3_1_201_a.heic",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": ".photobook-cache/previews/a1ac5043ddc682aaafdc4471f2b9.jpg?v=1792526385386478209",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "landscapes/873A3C10-7681-43F4-B750-23CBE53250FA_1_105_c.jpeg",
+      "category": "landscapes",
+      "source": "landscapes",
+      "title": "A landscape moment",
+      "image": "photos/landscapes/873A3C10-7681-43F4-B750-23CBE53250FA_1_105_c.jpeg?v=1790461470685893768",
+      "alt": "Sai’s photograph from Landscapes",
       "story": "",
       "camera": "",
       "recent": true,
@@ -675,6 +879,126 @@
   ],
   "recentPhotos": [
     {
+      "id": "landscapes/B07AD07B-ABD2-47AF-A6F6-577039042E51_1_102_a.jpeg",
+      "category": "landscapes",
+      "source": "landscapes",
+      "title": "A landscape moment",
+      "image": "photos/landscapes/B07AD07B-ABD2-47AF-A6F6-577039042E51_1_102_a.jpeg?v=1792526163095239381",
+      "alt": "Sai’s photograph from Landscapes",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/16DDFF4F-6443-4FC8-ADF4-1F407F8E7B93_1_102_a.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/16DDFF4F-6443-4FC8-ADF4-1F407F8E7B93_1_102_a.jpeg?v=1792526107637250492",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "life/0D7A8D14-571A-4658-9CAC-327F95DF5E27_1_102_o.jpeg",
+      "category": "life",
+      "source": "life",
+      "title": "A moment in life",
+      "image": "photos/life/0D7A8D14-571A-4658-9CAC-327F95DF5E27_1_102_o.jpeg?v=1792526002475072048",
+      "alt": "Sai’s photograph from Life",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/72B62CFF-77B5-40B2-9EFC-0C176CBF05DA_1_102_a.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/72B62CFF-77B5-40B2-9EFC-0C176CBF05DA_1_102_a.jpeg?v=1792525806446450350",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/2F7A65EA-298D-4E88-9EE8-6BD7171B697E_1_102_o.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/2F7A65EA-298D-4E88-9EE8-6BD7171B697E_1_102_o.jpeg?v=1792525706168584737",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/63D09179-77A2-4A59-BB4A-10C4EFBE4446_1_102_o.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/63D09179-77A2-4A59-BB4A-10C4EFBE4446_1_102_o.jpeg?v=1792525646306051155",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/242DAD4F-D478-4D4A-80A5-97B3A5FA97B4_1_102_a.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/242DAD4F-D478-4D4A-80A5-97B3A5FA97B4_1_102_a.jpeg?v=1792525646273113092",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "life/510BF5AB-120B-44F0-8A51-1052A981FB55_1_102_a.jpeg",
+      "category": "life",
+      "source": "life",
+      "title": "A moment in life",
+      "image": "photos/life/510BF5AB-120B-44F0-8A51-1052A981FB55_1_102_a.jpeg?v=1792525627000672438",
+      "alt": "Sai’s photograph from Life",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "landscapes/1637E630-CEF6-4531-BD2B-35581C9C5210_1_102_a.jpeg",
+      "category": "landscapes",
+      "source": "landscapes",
+      "title": "A landscape moment",
+      "image": "photos/landscapes/1637E630-CEF6-4531-BD2B-35581C9C5210_1_102_a.jpeg?v=1792525547690924430",
+      "alt": "Sai’s photograph from Landscapes",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "life/F3915050-0043-4F60-8405-572A95541831_1_105_c.jpeg",
+      "category": "life",
+      "source": "life",
+      "title": "A moment in life",
+      "image": "photos/life/F3915050-0043-4F60-8405-572A95541831_1_105_c.jpeg?v=1792444977359493518",
+      "alt": "Sai’s photograph from Life",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
       "id": "life/1428E4CF-9AB4-458A-A3A7-C9B5C450F79E_1_102_a.jpeg",
       "category": "life",
       "source": "life",
@@ -1035,6 +1359,18 @@
       "sample": false
     },
     {
+      "id": "nature/0A4172F6-6DE2-4B73-B02C-A84FEF704F78_1_201_a.heic",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": ".photobook-cache/previews/86d804b60e4b5db7076391cafce6.jpg?v=1792526385273297166",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
       "id": "landscapes/52355660-56B1-40D0-B1C9-B33C2D812759_1_105_c.jpeg",
       "category": "landscapes",
       "source": "landscapes",
@@ -1053,6 +1389,18 @@
       "title": "A landscape moment",
       "image": "photos/landscapes/6E5625F0-38F5-4BD5-9641-F4AAFA571D7E_1_105_c.jpeg?v=1791693837955324725",
       "alt": "Sai’s photograph from Landscapes",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/647C1165-D448-4B6D-BA23-B0FEB33BFACD_1_105_c.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/647C1165-D448-4B6D-BA23-B0FEB33BFACD_1_105_c.jpeg?v=1791693837824224407",
+      "alt": "Sai’s photograph from Nature",
       "story": "",
       "camera": "",
       "recent": true,
@@ -1119,6 +1467,30 @@
       "sample": false
     },
     {
+      "id": "nature/49E54A29-6E25-4F0F-8701-74332046D754_1_201_a.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/49E54A29-6E25-4F0F-8701-74332046D754_1_201_a.jpeg?v=1791435913258341615",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/3B64C372-671E-483E-9A99-17D996D14EE8_1_201_a.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/3B64C372-671E-483E-9A99-17D996D14EE8_1_201_a.jpeg?v=1791435910886391091",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
       "id": "landscapes/FAC338D5-72D2-4B67-80E0-71FF79351E33_1_201_a.jpeg",
       "category": "landscapes",
       "source": "landscapes",
@@ -1167,6 +1539,18 @@
       "sample": false
     },
     {
+      "id": "nature/8F8E6B4F-BFD4-4169-AAEB-C114FE89BE77_1_201_a.heic",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": ".photobook-cache/previews/b996e963b8c146596429a12c0d37.jpg?v=1792526385528300252",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
       "id": "nature/5E3E0E71-0DCB-4596-B452-388DE97F5861_1_105_c.jpeg",
       "category": "nature",
       "source": "nature",
@@ -1197,6 +1581,30 @@
       "title": "A moment in life",
       "image": "photos/life/426AB23E-345F-4E40-BA12-C8114EF5F6B3_1_105_c.jpeg?v=1790623952637536848",
       "alt": "Sai’s photograph from Life",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "nature/3CC3A244-B0E9-4A2D-8C55-89A6AD6739C3_1_201_a.heic",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": ".photobook-cache/previews/a1ac5043ddc682aaafdc4471f2b9.jpg?v=1792526385386478209",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
+      "id": "landscapes/873A3C10-7681-43F4-B750-23CBE53250FA_1_105_c.jpeg",
+      "category": "landscapes",
+      "source": "landscapes",
+      "title": "A landscape moment",
+      "image": "photos/landscapes/873A3C10-7681-43F4-B750-23CBE53250FA_1_105_c.jpeg?v=1790461470685893768",
+      "alt": "Sai’s photograph from Landscapes",
       "story": "",
       "camera": "",
       "recent": true,
@@ -1347,6 +1755,6 @@
       "sample": false
     }
   ],
-  "localCount": 56,
+  "localCount": 73,
   "recentFolderCount": 0
 }
