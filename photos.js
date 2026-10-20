@@ -2,6 +2,18 @@
 window.PHOTO_BOOK_CATALOG = {
   "photos": [
     {
+      "id": "nature/17071EA6-EAF2-42A3-A599-6D6C3C7494EB_1_102_a.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/17071EA6-EAF2-42A3-A599-6D6C3C7494EB_1_102_a.jpeg?v=1792526536379301634",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
       "id": "landscapes/B07AD07B-ABD2-47AF-A6F6-577039042E51_1_102_a.jpeg",
       "category": "landscapes",
       "source": "landscapes",
@@ -880,6 +892,18 @@ window.PHOTO_BOOK_CATALOG = {
   ],
   "recentPhotos": [
     {
+      "id": "nature/17071EA6-EAF2-42A3-A599-6D6C3C7494EB_1_102_a.jpeg",
+      "category": "nature",
+      "source": "nature",
+      "title": "A moment in nature",
+      "image": "photos/nature/17071EA6-EAF2-42A3-A599-6D6C3C7494EB_1_102_a.jpeg?v=1792526536379301634",
+      "alt": "Sai’s photograph from Nature",
+      "story": "",
+      "camera": "",
+      "recent": true,
+      "sample": false
+    },
+    {
       "id": "landscapes/B07AD07B-ABD2-47AF-A6F6-577039042E51_1_102_a.jpeg",
       "category": "landscapes",
       "source": "landscapes",
@@ -1756,6 +1780,6 @@ window.PHOTO_BOOK_CATALOG = {
       "sample": false
     }
   ],
-  "localCount": 73,
+  "localCount": 74,
   "recentFolderCount": 0
 };
