@@ -1,5 +1,7 @@
 import hashlib
 import json
+import os
+import shutil
 from pathlib import Path
 import tempfile
 import unittest
@@ -33,6 +35,22 @@ class GalleryTests(unittest.TestCase):
         preview=next((self.root/'.photobook-cache/previews').glob('*.jpg'))
         with Image.open(preview) as im:self.assertGreater(max(ImageStat.Stat(im).mean),100)
         self.assertFalse(first['photos'][0]['sample'])
+    def test_heic_urls_survive_checkout_timestamp_changes(self):
+        register_heif_opener()
+        p=self.root/'photos/nature/view.heic';p.parent.mkdir(parents=True)
+        Image.new('RGB',(32,16),(40,150,220)).save(p)
+        first=build(self.root)['photos'][0]['image']
+        # A fresh checkout has the same bytes with a different modification time.
+        checkout=self.root/'checkout'
+        copied=checkout/'photos/nature/view.heic';copied.parent.mkdir(parents=True)
+        shutil.copyfile(p,copied)
+        os.utime(copied,ns=(p.stat().st_atime_ns,p.stat().st_mtime_ns+10_000_000_000))
+        self.assertEqual(first,build(checkout)['photos'][0]['image'])
+        # Replacing the image must still invalidate its preview, even at the old timestamp.
+        timestamp=copied.stat().st_mtime_ns
+        Image.new('RGB',(32,16),(210,40,30)).save(copied)
+        os.utime(copied,ns=(timestamp,timestamp))
+        self.assertNotEqual(first,build(checkout)['photos'][0]['image'])
     def test_sidecar_and_invalid_sidecar(self):
         p=self.photo('nature','tree.jpg')
         sidecar=p.with_suffix('.json')

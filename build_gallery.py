@@ -36,8 +36,10 @@ def web_image(image: Path, root: Path) -> Path | None:
     except ImportError:
         print('HEIC support needs: python -m pip install -r requirements.txt', file=sys.stderr)
         return None
-    stat = image.stat()
-    signature = f'pillow-v1:{image.relative_to(root).as_posix()}:{stat.st_mtime_ns}:{stat.st_size}'
+    # Checkout timestamps change on GitHub runners; image content does not.
+    with image.open('rb') as source:
+        digest = hashlib.file_digest(source, 'sha256').hexdigest()
+    signature = f'pillow-v2:{image.relative_to(root).as_posix()}:{digest}'
     name = hashlib.sha256(signature.encode()).hexdigest()[:28] + '.jpg'
     preview = root / '.photobook-cache' / 'previews' / name
     if preview.is_file() and preview.stat().st_size:
@@ -85,11 +87,12 @@ def scan(root: Path, category: str) -> list:
             if label not in CATEGORIES:
                 label = category
             path = '/'.join(quote(part, safe='') for part in source.relative_to(root).parts)
+            version = source.stem if image.suffix.lower() in APPLE_IMAGES else str(stat.st_mtime_ns)
             photos.append({
                 'id': f'{category}/{image.relative_to(folder).as_posix()}',
                 'category': label, 'source': category,
                 'title': field('title', title),
-                'image': path + f'?v={source.stat().st_mtime_ns}',
+                'image': path + f'?v={version}',
                 'alt': field('alt', f'Sai’s photograph from {CATEGORIES[label]}'),
                 'story': field('story'), 'camera': field('camera'),
                 'recent': details.get('recent', True) is True,

@@ -26,7 +26,7 @@ function element(tag, className, text) {
   return node;
 }
 
-// Loading states and a useful fallback if a remote sample cannot load.
+// Keep loading states exclusive, including when a failed image later succeeds.
 function prepareImage(image,container) {
   container.classList.remove('image-ready','image-error');
   let fallback = container.querySelector('.image-fallback');
@@ -34,8 +34,14 @@ function prepareImage(image,container) {
     fallback = element('span','image-fallback','This photograph couldn’t load. Check the image path or your connection.');
     container.append(fallback);
   }
-  const loaded = () => container.classList.add('image-ready');
-  const failed = () => container.classList.add('image-error');
+  const loaded = () => {
+    container.classList.remove('image-error');
+    container.classList.add('image-ready');
+  };
+  const failed = () => {
+    container.classList.remove('image-ready');
+    container.classList.add('image-error');
+  };
   image.onload = loaded;
   image.onerror = failed;
   if (image.complete) { if (image.naturalWidth) loaded(); else failed(); }
@@ -227,8 +233,9 @@ addEventListener('scroll',() => {
 updateScroll();
 
 
-// The custom local launcher rebuilds this catalog from the photo folders.
-if (['http:','https:'].includes(location.protocol) && ['127.0.0.1','localhost','[::1]'].includes(location.hostname)) {
+// Refresh hosted galleries too: cached catalogs can refer to an older deployment.
+if (['http:','https:'].includes(location.protocol)) {
+  const localPreview = ['127.0.0.1','localhost','[::1]'].includes(location.hostname);
   let refreshing = false;
   async function refreshPhotos() {
     if (refreshing || document.hidden) return;
@@ -248,10 +255,11 @@ if (['http:','https:'].includes(location.protocol) && ['127.0.0.1','localhost','
         viewerIndex = viewerPhotos.findIndex(photo => photo.id === activeId);
         if (viewerIndex < 0) dialog.close(); else updatePhoto();
       }
-    } catch { /* The last loaded photos remain usable after the local server stops. */ }
+    } catch { /* Keep the last loaded catalog when the connection is unavailable. */ }
     finally {refreshing=false;}
   }
-  setInterval(refreshPhotos,5000);
+  if (localPreview) setInterval(refreshPhotos,5000);
   addEventListener('focus',refreshPhotos);
+  document.addEventListener('visibilitychange',() => { if (!document.hidden) refreshPhotos(); });
   refreshPhotos();
 }
